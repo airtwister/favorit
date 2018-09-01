@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <List msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
 
@@ -15,6 +15,3 @@ export default {
 }
 </script>
 
-<style lang="scss">
-@import 'scss/app';
-</style>
