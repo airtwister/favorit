@@ -30,11 +30,29 @@ body {
     }
   }
 
+  &__region select {
+    min-width: 100px;
+    background: #F3F5FB;
+    border: none;
+    border-radius: 0;
+    height: 36px;
+  }
+
   &__search {
+    position: relative;
     width: 320px;
 
+    img {
+      position: absolute;
+      right: 8px;
+      top: 11px
+    }
+
     input {
+      padding: 0 10px;
+      height: 36px;
       width: 100%;
+      border: 1px solid #e7eaf2;
     }
   }
 
@@ -49,23 +67,53 @@ body {
 }
 
 .top-title {
+  display: flex;
+  align-items: center;
   margin-top: 10px;
-  padding: 10px 0;
+  padding: 14px 0;
 
   &__label {
     margin-left: 20px;
     color: #c2c5ce;
   }
+
+  &__separator {
+    margin: 0 38px;
+    width: 1px;
+    height: 44px;
+    background: #e7eaf2;
+  }
+
+  &__distributor {
+    img {
+      margin-bottom: -4px;
+    }
+  }
+
+  &__ask {
+    margin-left: auto;
+
+    button {
+      height: 50px;
+      padding: 0 25px;
+      border: none;
+      outline: none;
+      color: white;
+      background: $blue;
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+  }
 }
 
 .menu {
+  display: flex;
+  justify-content: space-between;
   padding: 10px 0;
   font-size: 21px;
   font-weight: $fontBold;
 
   &__item {
-    margin: 0 25px;
-
     &:hover {
       color: $blue;
     }

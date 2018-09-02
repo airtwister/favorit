@@ -65,6 +65,7 @@ module.exports = {
       $: jQuery,
       jQuery: jQuery,
       "window.jQuery": jQuery
-    })
+    }),
+    new webpack.HotModuleReplacementPlugin()
   ],
 };
