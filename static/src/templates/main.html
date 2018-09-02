@@ -5,14 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>favorit</title>
-    <link type="text/css" rel="stylesheet" href="app.css">
 </head>
 <body>
     <div class="container">
-        <header>
-            <div class="top-nav">Для грузового</div>
-            <div class="menu">Главная</div>
+        <header class="header">
+            <div class="top-nav">
+                <div class="top-nav__links">
+                    <a>
+                        <img src="/assets/images/icons/car.png">
+                        Для легкового транспорта
+                    </a>
+                    <a>
+                        <img src="/assets/images/icons/delivery-truck.png">
+                        Для грузового транспорта
+                    </a>
+                    <a>
+                        <img src="/assets/images/icons/production-plant.png">
+                        Для индустрии
+                    </a>
+                </div>
+
+                <div class="top-nav__region">
+                    <select>
+                        <option>Регион</option>
+                    </select>
+                </div>
+
+                <div class="top-nav__search">
+                    <input title="Поиск">
+                </div>
+
+                <div class="basket">
+                    <img src="/assets/images/icons/cart.png">
+                    Заказы
+                </div>
+            </div>
+
+            <div class="top-title">
+                <div class="top-title__logo">
+                    <img src="/assets/images/logo.png">
+                </div>
+
+                <div class="top-title__label">
+                    Для всех
+                </div>
+
+                <div class="top-title__distributor"></div>
+                <div class="top-title__ask"></div>
+            </div>
+
+            <div class="menu">
+                <a class="menu__item">Главная</a>
+                <a class="menu__item">Каталог</a>
+                <a class="menu__item">Сотрудничество</a>
+                <a class="menu__item">Подбор масла</a>
+                <a class="menu__item">Бренды</a>
+                <a class="menu__item">Mobil 1 Центр</a>
+                <a class="menu__item">О нас</a>
+                <a class="menu__item">Контакты</a>
+            </div>
         </header>
+
+        <main>
+            <div class="top-slider">
+                <div class="top-slider__item">
+                    <img src="/assets/images/bg_header.png">
+                </div>
+            </div>
+        </main>
     </div>
 </body>
 </html>
