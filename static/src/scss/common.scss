@@ -2,6 +2,7 @@ body {
   padding: 26px 10px;
   font-family: $proximaNova;
   font-size: 16px;
+  line-height: 24px;
 }
 
 .container {
@@ -23,6 +24,7 @@ body {
       display: flex;
       align-items: center;
       margin-right: 30px;
+      cursor: pointer;
     }
 
     img {
@@ -98,7 +100,7 @@ body {
       padding: 0 25px;
       border: none;
       outline: none;
-      color: white;
+      color: $white;
       background: $blue;
       font-size: 13px;
       text-transform: uppercase;
