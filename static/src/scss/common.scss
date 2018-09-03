@@ -3,6 +3,15 @@ body {
   font-family: $proximaNova;
   font-size: 16px;
   line-height: 24px;
+  color: $black;
+}
+
+button {
+  outline: none;
+
+  &:not([disabled]) {
+    cursor: pointer;
+  }
 }
 
 .container {
@@ -54,7 +63,7 @@ body {
       padding: 0 10px;
       height: 36px;
       width: 100%;
-      border: 1px solid #e7eaf2;
+      border: 1px solid $greyLighter;
     }
   }
 
@@ -83,7 +92,7 @@ body {
     margin: 0 38px;
     width: 1px;
     height: 44px;
-    background: #e7eaf2;
+    background: $greyLighter;
   }
 
   &__distributor {
@@ -97,7 +106,7 @@ body {
 
     button {
       height: 50px;
-      padding: 0 25px;
+      padding: 0 30px;
       border: none;
       outline: none;
       color: $white;
@@ -116,7 +125,10 @@ body {
   font-weight: $fontBold;
 
   &__item {
+    color: $black;
+
     &:hover {
+      text-decoration: none;
       color: $blue;
     }
 

@@ -31,14 +31,15 @@
   justify-content: space-between;
 }
 
+
+.main-title {
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: $fontBold;
+}
+
 .partner-adv {
   width: 60%;
-
-  &__title {
-    text-transform: uppercase;
-    font-size: 28px;
-    font-weight: $fontBold;
-  }
 
   &__items {
     display: flex;
@@ -108,5 +109,141 @@
     font-size: 20px;
     font-weight: $fontBold;
     text-transform: uppercase;
+  }
+}
+
+.about {
+  margin-top: 40px;
+
+  &__text {
+    margin-top: 36px;
+    font-size: 18px;
+  }
+}
+
+.directions {
+  position: relative;
+  margin: 40px auto 0;
+  max-width: 1530px;
+
+  &__content {
+    margin-top: 36px;
+    display: flex;
+  }
+
+  &__item {
+    margin: 0 12px;
+  }
+
+  &__image{
+    display: block;
+    width: 100%;
+  }
+
+  &__title {
+    padding: 0 32px;
+    display: flex;
+    align-items: center;
+    background: $blue;
+    height: 80px;
+    color: $white;
+    font-size: 20px;
+    font-weight: $fontSemiBold;
+
+    img {
+      margin-right: 20px;
+    }
+  }
+}
+
+.news {
+  margin-top: 80px;
+  display: flex;
+
+  &__next-btn {
+    height: 50px;
+    padding: 0 30px;
+    border: none;
+    outline: none;
+    color: $white;
+    background: $blue;
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+
+  &__separator {
+    width: 102px;
+    height: 1px;
+    background: $greyLighter;
+  }
+
+  &__all-link {
+    font-size: 18px;
+    color: $black;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      text-decoration: none;
+      color: $blue;
+    }
+
+    img {
+      margin-left: 10px;
+    }
+  }
+
+  &__date {
+    margin-right: 30px;
+    text-transform: uppercase;
+    font-weight: $fontBold;
+    font-size: 14px;
+  }
+}
+
+.primary-news {
+  padding-right: 46px;
+
+  .main-title {
+    margin-bottom: 36px;
+  }
+
+  .news__separator {
+    margin: 28px 0;
+  }
+
+  &__title {
+    font-size: 35px;
+    line-height: 50px;
+  }
+
+  &__text {
+    font-size: 18px;
+  }
+
+  &__footer {
+    margin-top: 56px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.secondary-news {
+  padding-right: 46px;
+
+  .news__separator {
+    margin: 16px 0;
+  }
+
+  &__item {
+    margin-bottom: 40px;
+  }
+
+  &__text {
+    font-size: 18px;
+  }
+
+  button {
+    margin-top: 20px;
   }
 }
