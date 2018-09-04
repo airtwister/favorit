@@ -6,6 +6,10 @@ body {
   color: $black;
 }
 
+a {
+  text-decoration: none;
+}
+
 button {
   outline: none;
 
@@ -170,6 +174,37 @@ button {
 
     img {
       height: 40px;
+    }
+  }
+}
+
+// bootstrap
+.carousel-indicators {
+  display: flex;
+  justify-content: flex-start;
+
+  li {
+    background: transparent;
+    margin: 0 8px;
+    height: 14px;
+    width: 14px;
+    border: 1px solid #B9B9B9;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &.active {
+      background: $blue;
+      border-color: transparent;
+    }
+  }
+
+  &--white {
+    li {
+      border-color: $white;
+
+      &.active {
+        background: $white;
+      }
     }
   }
 }

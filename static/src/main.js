@@ -1,5 +1,11 @@
-import 'bootstrap/dist/css/bootstrap.css';
+import $ from 'jquery';
 import 'bootstrap/js/dist/carousel';
 import './scss/app.scss';
 
-$(".carousel").carousel({interval: 500});
+$('#top-slider').carousel({
+  interval: 4000
+});
+
+$('.carousel').carousel({
+  interval: false
+});

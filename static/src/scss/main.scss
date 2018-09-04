@@ -3,7 +3,6 @@
 
   &__item {
     overflow: hidden;
-    position: relative;
     color: $white;
   }
 
@@ -16,12 +15,19 @@
 
   &__title {
     font-size: 52px;
-    margin-bottom: 26px;
+    margin-bottom: 20px;
   }
 
   &__description {
     line-height: 25px;
     font-size: 18px;
+  }
+
+  .carousel-indicators{
+    position: absolute;
+    z-index: 1;
+    bottom: 40px;
+    margin-left: 64px;
   }
 }
 
@@ -265,7 +271,7 @@
     margin-top: 40px;
   }
 
-  &__slide {
+  &__items {
     display: flex;
   }
 
@@ -301,7 +307,7 @@
     margin-top: 40px;
   }
 
-  &__slide {
+  &__items {
     display: flex;
   }
 
@@ -335,7 +341,7 @@
     margin-top: 40px;
   }
 
-  &__slide {
+  &__items {
     display: flex;
   }
 
@@ -402,5 +408,15 @@
     label, p {
       width: 50%;
     }
+  }
+}
+
+.success-cases, .rewards, .trusted-companies {
+  .carousel-indicators {
+    position: absolute;
+    top: -72px;
+    right: 0;
+    justify-content: flex-end;
+    margin-right: 0;
   }
 }
