@@ -2,7 +2,7 @@ body {
   padding: 26px 10px 100px;
   font-family: $proximaNova;
   font-size: 16px;
-  line-height: 1.8;
+  line-height: 1.7;
   color: $black;
 }
 
@@ -20,9 +20,9 @@ button {
 
 .container {
   max-width: $desktopWidth;
-  min-width: 1200px;
   position: relative;
   margin: 0 auto;
+  padding: 0;
 }
 
 .container-large {
@@ -44,26 +44,39 @@ button {
       align-items: center;
       margin-right: 30px;
       cursor: pointer;
+      line-height: 1.1;
     }
 
     img {
       margin-right: 10px;
     }
+
+    @media only screen and (max-width: $tableMaxWidth) {
+      a {
+        max-width: 150px;
+      }
+    }
   }
 
-  &__region select {
-    min-width: 100px;
-    background: #F3F5FB;
-    border: none;
-    border-radius: 0;
-    height: 36px;
+  &__region {
+    margin-left: auto;
+
+    select {
+      min-width: 100px;
+      background: #F3F5FB;
+      border: none;
+      border-radius: 0;
+      height: 36px;
+    }
   }
 
   &__search {
+    margin: 0 20px;
     position: relative;
     width: 320px;
 
     img {
+      cursor: pointer;
       position: absolute;
       right: 8px;
       top: 11px
@@ -75,6 +88,19 @@ button {
       width: 100%;
       border: 1px solid $greyLighter;
     }
+
+    @media only screen and (max-width: $tableMaxWidth) {
+      width: 20px;
+      margin: 0 30px 0 50px;
+
+      img {
+        position: static;
+      }
+
+      input {
+        display: none;
+      }
+    }
   }
 
   .basket {
@@ -83,6 +109,12 @@ button {
 
     img {
       margin-right: 10px;
+    }
+
+    @media only screen and (max-width: $tableMaxWidth) {
+      span {
+        display: none;
+      }
     }
   }
 }
@@ -94,6 +126,9 @@ button {
   padding: 14px 0;
 
   &__label {
+    line-height: 1.2;
+    max-width: 170px;
+    min-width: 70px;
     margin-left: 20px;
     color: #c2c5ce;
   }
@@ -103,9 +138,15 @@ button {
     width: 1px;
     height: 44px;
     background: $greyLighter;
+
+    @media only screen and (max-width: $tableMaxWidth) {
+      margin: 0 16px;
+    }
   }
 
   &__distributor {
+    line-height: 1.2;
+
     img {
       margin-bottom: -4px;
     }
@@ -123,6 +164,7 @@ button {
       background: $blue;
       font-size: 13px;
       text-transform: uppercase;
+      white-space: nowrap;
     }
   }
 }
@@ -149,6 +191,10 @@ button {
     &:last-child {
       margin-right: 0;
     }
+  }
+
+  @media only screen and (max-width: $tableMaxWidth) {
+    font-size: 17px;
   }
 }
 

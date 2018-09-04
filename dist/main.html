@@ -77,21 +77,39 @@
         </header>
 
         <main>
-            <div class="top-slider owl-carousel owl-theme">
-                <div class="top-slider__item item">
-                    <img src="/assets/images/bg_header.png">
+            <div class="top-slider carousel slide" id="top-slider" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#top-slider" data-slide-to="0" class="active"></li>
+                    <li data-target="#top-slider" data-slide-to="1"></li>
+                    <li data-target="#top-slider" data-slide-to="2"></li>
+                </ol>
 
-                    <div class="top-slider__content">
-                        <p class="top-slider__title">Компания «Фаворит»</p>
-                        <p class="top-slider__description">Авторизованный дистрибьютор корпорации ExxonMobil в Пермском крае и Удмуртии</p>
+                <div class="carousel-inner">
+                    <div class="top-slider__item carousel-item active">
+                        <img src="/assets/images/bg_header.png">
+
+                        <div class="top-slider__content">
+                            <p class="top-slider__title">Компания «Фаворит»</p>
+                            <p class="top-slider__description">Авторизованный дистрибьютор корпорации ExxonMobil в Пермском крае и Удмуртии</p>
+                        </div>
                     </div>
-                </div>
-                <div class="top-slider__item item">
-                    <img src="/assets/images/bg_header.png">
 
-                    <div class="top-slider__content">
-                        <p class="top-slider__title">Компания «Фаворит»</p>
-                        <p class="top-slider__description">Авторизованный дистрибьютор корпорации ExxonMobil в Пермском крае и Удмуртии</p>
+                    <div class="top-slider__item carousel-item">
+                        <img src="/assets/images/bg_header.png">
+
+                        <div class="top-slider__content">
+                            <p class="top-slider__title">Второй слайд</p>
+                            <p class="top-slider__description">Авторизованный дистрибьютор корпорации ExxonMobil в Пермском крае и Удмуртии</p>
+                        </div>
+                    </div>
+
+                    <div class="top-slider__item carousel-item">
+                        <img src="/assets/images/bg_header.png">
+
+                        <div class="top-slider__content">
+                            <p class="top-slider__title">Третий слайд</p>
+                            <p class="top-slider__description">Авторизованный дистрибьютор корпорации ExxonMobil в Пермском крае и Удмуртии</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -262,26 +280,82 @@
             <div class="success-cases__content">
                 <p class="main-title">Опыт успешного внедрения</p>
 
-                <div class="success-cases__slides">
-                    <div class="success-cases__slide">
-                        <div class="success-cases__item">
-                            <img src="/assets/images/success-cases/1.jpg">
-                            <div class="success-cases__text">Mobil Pegasus 1005 экономит предприятию за год более 400 тысяч рублей при использовании в газовых двигателях MAN</div>
-                        </div>
+                <div class="success-cases__slides carousel slide" id="partnership-slider">
+                    <ol class="carousel-indicators carousel-indicators--white">
+                        <li data-target="#partnership-slider" data-slide-to="0" class="active"></li>
+                        <li data-target="#partnership-slider" data-slide-to="1"></li>
+                        <li data-target="#partnership-slider" data-slide-to="2"></li>
+                    </ol>
 
-                        <div class="success-cases__item">
-                            <img src="/assets/images/success-cases/2.jpg">
-                            <div class="success-cases__text">Использование Mobil Pegasus 1005 позволило сократить эксплуатационные затраты в 2 раза</div>
-                        </div>
+                    <div class="carousel-inner">
+                        <div class="success-cases__slide carousel-item active">
+                            <div class="success-cases__items">
+                                <div class="success-cases__item">
+                                    <img src="/assets/images/success-cases/1.jpg">
+                                    <div class="success-cases__text">Mobil Pegasus 1005 экономит предприятию за год более 400 тысяч рублей при использовании в газовых двигателях MAN</div>
+                                </div>
 
-                        <div class="success-cases__item">
-                            <img src="/assets/images/success-cases/3.jpg">
-                            <div class="success-cases__text">Использование Mobil Delvac MX 15W40 позволило сократить эксплуатационные затраты более, чем 2 раза</div>
-                        </div>
+                                <div class="success-cases__item">
+                                    <img src="/assets/images/success-cases/2.jpg">
+                                    <div class="success-cases__text">Использование Mobil Pegasus 1005 позволило сократить эксплуатационные затраты в 2 раза</div>
+                                </div>
 
-                        <div class="success-cases__item">
-                            <img src="/assets/images/success-cases/4.jpg">
-                            <div class="success-cases__text">Mobil Delvac MX 15W40 экономит пассажироперевозчику более 400000 рублей в год</div>
+                                <div class="success-cases__item">
+                                    <img src="/assets/images/success-cases/3.jpg">
+                                    <div class="success-cases__text">Использование Mobil Delvac MX 15W40 позволило сократить эксплуатационные затраты более, чем 2 раза</div>
+                                </div>
+
+                                <div class="success-cases__item">
+                                    <img src="/assets/images/success-cases/4.jpg">
+                                    <div class="success-cases__text">Mobil Delvac MX 15W40 экономит пассажироперевозчику более 400000 рублей в год</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="success-cases__slide carousel-item">
+                            <div class="success-cases__items">
+                                <div class="success-cases__item">
+                                    <img src="/assets/images/success-cases/1.jpg">
+                                    <div class="success-cases__text">Mobil Pegasus 1005 экономит предприятию за год более 400 тысяч рублей при использовании в газовых двигателях MAN</div>
+                                </div>
+
+                                <div class="success-cases__item">
+                                    <img src="/assets/images/success-cases/2.jpg">
+                                    <div class="success-cases__text">Использование Mobil Pegasus 1005 позволило сократить эксплуатационные затраты в 2 раза</div>
+                                </div>
+
+                                <div class="success-cases__item">
+                                    <img src="/assets/images/success-cases/3.jpg">
+                                    <div class="success-cases__text">Использование Mobil Delvac MX 15W40 позволило сократить эксплуатационные затраты более, чем 2 раза</div>
+                                </div>
+
+                                <div class="success-cases__item">
+                                    <img src="/assets/images/success-cases/4.jpg">
+                                    <div class="success-cases__text">Mobil Delvac MX 15W40 экономит пассажироперевозчику более 400000 рублей в год</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="success-cases__slide carousel-item">
+                            <div class="success-cases__items">
+                                <div class="success-cases__item">
+                                    <img src="/assets/images/success-cases/1.jpg">
+                                    <div class="success-cases__text">Mobil Pegasus 1005 экономит предприятию за год более 400 тысяч рублей при использовании в газовых двигателях MAN</div>
+                                </div>
+
+                                <div class="success-cases__item">
+                                    <img src="/assets/images/success-cases/2.jpg">
+                                    <div class="success-cases__text">Использование Mobil Pegasus 1005 позволило сократить эксплуатационные затраты в 2 раза</div>
+                                </div>
+
+                                <div class="success-cases__item">
+                                    <img src="/assets/images/success-cases/3.jpg">
+                                    <div class="success-cases__text">Использование Mobil Delvac MX 15W40 позволило сократить эксплуатационные затраты более, чем 2 раза</div>
+                                </div>
+
+                                <div class="success-cases__item">
+                                    <img src="/assets/images/success-cases/4.jpg">
+                                    <div class="success-cases__text">Mobil Delvac MX 15W40 экономит пассажироперевозчику более 400000 рублей в год</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -292,38 +366,118 @@
             <div class="rewards__content">
                 <p class="main-title">Награды и достижения</p>
 
-                <div class="rewards__slides">
-                    <div class="rewards__slide">
-                        <div class="rewards__item">
-                            <div class="rewards__image">
-                                <img src="/assets/images/rewards/exxon-mobil.jpg">
-                            </div>
+                <div class="rewards__slides carousel slide" id="rewards-slider">
+                    <ol class="carousel-indicators">
+                        <li data-target="#rewards-slider" data-slide-to="0" class="active"></li>
+                        <li data-target="#rewards-slider" data-slide-to="1"></li>
+                        <li data-target="#rewards-slider" data-slide-to="2"></li>
+                    </ol>
 
-                            <div class="rewards__text">Награда от ExxonMobil за высокие стандарты в выполнении Программы PVL ExxonMobil в 2017 году</div>
+                    <div class="carousel-inner">
+                        <div class="rewards__slide carousel-item active">
+                            <div class="rewards__items">
+                                <div class="rewards__item">
+                                    <div class="rewards__image">
+                                        <img src="/assets/images/rewards/exxon-mobil.jpg">
+                                    </div>
+
+                                    <div class="rewards__text">Награда от ExxonMobil за высокие стандарты в выполнении Программы PVL ExxonMobil в 2017 году</div>
+                                </div>
+
+                                <div class="rewards__item">
+                                    <div class="rewards__image">
+                                        <img src="/assets/images/rewards/elite-2013.jpg">
+                                    </div>
+
+                                    <div class="rewards__text">Серебряная награда в конкурсе среди дистрибьюторов ExxonMobil Elite Club2013</div>
+                                </div>
+
+                                <div class="rewards__item">
+                                    <div class="rewards__image">
+                                        <img src="/assets/images/rewards/elite-2012.jpg">
+                                    </div>
+
+                                    <div class="rewards__text">Золотая награда в конкурсе среди дистрибьюторов ExxonMobil Elite Club 2012</div>
+                                </div>
+
+                                <div class="rewards__item">
+                                    <div class="rewards__image">
+                                        <img src="/assets/images/rewards/elite-2011.jpg">
+                                    </div>
+
+                                    <div class="rewards__text">Серебряная награда в конкурсе среди дистрибьюторов ExxonMobil Elite Club2011</div>
+                                </div>
+                            </div>
                         </div>
+                        <div class="rewards__slide carousel-item">
+                            <div class="rewards__items">
+                                <div class="rewards__item">
+                                    <div class="rewards__image">
+                                        <img src="/assets/images/rewards/exxon-mobil.jpg">
+                                    </div>
 
-                        <div class="rewards__item">
-                            <div class="rewards__image">
-                                <img src="/assets/images/rewards/elite-2013.jpg">
+                                    <div class="rewards__text">Награда от ExxonMobil за высокие стандарты в выполнении Программы PVL ExxonMobil в 2017 году</div>
+                                </div>
+
+                                <div class="rewards__item">
+                                    <div class="rewards__image">
+                                        <img src="/assets/images/rewards/elite-2013.jpg">
+                                    </div>
+
+                                    <div class="rewards__text">Серебряная награда в конкурсе среди дистрибьюторов ExxonMobil Elite Club2013</div>
+                                </div>
+
+                                <div class="rewards__item">
+                                    <div class="rewards__image">
+                                        <img src="/assets/images/rewards/elite-2012.jpg">
+                                    </div>
+
+                                    <div class="rewards__text">Золотая награда в конкурсе среди дистрибьюторов ExxonMobil Elite Club 2012</div>
+                                </div>
+
+                                <div class="rewards__item">
+                                    <div class="rewards__image">
+                                        <img src="/assets/images/rewards/elite-2011.jpg">
+                                    </div>
+
+                                    <div class="rewards__text">Серебряная награда в конкурсе среди дистрибьюторов ExxonMobil Elite Club2011</div>
+                                </div>
                             </div>
-
-                            <div class="rewards__text">Серебряная награда в конкурсе среди дистрибьюторов ExxonMobil Elite Club2013</div>
                         </div>
+                        <div class="rewards__slide carousel-item">
+                            <div class="rewards__items">
+                                <div class="rewards__item">
+                                    <div class="rewards__image">
+                                        <img src="/assets/images/rewards/exxon-mobil.jpg">
+                                    </div>
 
-                        <div class="rewards__item">
-                            <div class="rewards__image">
-                                <img src="/assets/images/rewards/elite-2012.jpg">
+                                    <div class="rewards__text">Награда от ExxonMobil за высокие стандарты в выполнении Программы PVL ExxonMobil в 2017 году</div>
+                                </div>
+
+                                <div class="rewards__item">
+                                    <div class="rewards__image">
+                                        <img src="/assets/images/rewards/elite-2013.jpg">
+                                    </div>
+
+                                    <div class="rewards__text">Серебряная награда в конкурсе среди дистрибьюторов ExxonMobil Elite Club2013</div>
+                                </div>
+
+                                <div class="rewards__item">
+                                    <div class="rewards__image">
+                                        <img src="/assets/images/rewards/elite-2012.jpg">
+                                    </div>
+
+                                    <div class="rewards__text">Золотая награда в конкурсе среди дистрибьюторов ExxonMobil Elite Club 2012</div>
+                                </div>
+
+                                <div class="rewards__item">
+                                    <div class="rewards__image">
+                                        <img src="/assets/images/rewards/elite-2011.jpg">
+                                    </div>
+
+                                    <div class="rewards__text">Серебряная награда в конкурсе среди дистрибьюторов ExxonMobil Elite Club2011</div>
+                                </div>
                             </div>
-
-                            <div class="rewards__text">Золотая награда в конкурсе среди дистрибьюторов ExxonMobil Elite Club 2012</div>
-                        </div>
-
-                        <div class="rewards__item">
-                            <div class="rewards__image">
-                                <img src="/assets/images/rewards/elite-2011.jpg">
-                            </div>
-
-                            <div class="rewards__text">Серебряная награда в конкурсе среди дистрибьюторов ExxonMobil Elite Club2011</div>
                         </div>
                     </div>
                 </div>
@@ -334,22 +488,70 @@
             <div class="trusted-companies__content">
                 <p class="main-title">Нам доверяют</p>
 
-                <div class="trusted-companies__slides">
-                    <div class="trusted-companies__slide">
-                        <div class="trusted-companies__item">
-                            <img src="/assets/images/trusted-logos/lukoil.svg">
-                        </div>
+                <div class="trusted-companies__slides carousel slide" id="trusted-companies-slider">
+                    <ol class="carousel-indicators">
+                        <li data-target="#trusted-companies-slider" data-slide-to="0" class="active"></li>
+                        <li data-target="#trusted-companies-slider" data-slide-to="1"></li>
+                        <li data-target="#trusted-companies-slider" data-slide-to="2"></li>
+                    </ol>
 
-                        <div class="trusted-companies__item trusted-companies__item--knauf">
-                            <img src="/assets/images/trusted-logos/knauf.svg">
-                        </div>
+                    <div class="carousel-inner">
+                        <div class="trusted-companies__slide carousel-item active">
+                            <div class="trusted-companies__items">
+                                <div class="trusted-companies__item">
+                                    <img src="/assets/images/trusted-logos/lukoil.svg">
+                                </div>
 
-                        <div class="trusted-companies__item">
-                            <img src="/assets/images/trusted-logos/chmz.svg">
-                        </div>
+                                <div class="trusted-companies__item trusted-companies__item--knauf">
+                                    <img src="/assets/images/trusted-logos/knauf.svg">
+                                </div>
 
-                        <div class="trusted-companies__item">
-                            <img src="/assets/images/trusted-logos/ural-kaliy.svg">
+                                <div class="trusted-companies__item">
+                                    <img src="/assets/images/trusted-logos/chmz.svg">
+                                </div>
+
+                                <div class="trusted-companies__item">
+                                    <img src="/assets/images/trusted-logos/ural-kaliy.svg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="trusted-companies__slide carousel-item">
+                            <div class="trusted-companies__items">
+                                <div class="trusted-companies__item">
+                                    <img src="/assets/images/trusted-logos/lukoil.svg">
+                                </div>
+
+                                <div class="trusted-companies__item trusted-companies__item--knauf">
+                                    <img src="/assets/images/trusted-logos/knauf.svg">
+                                </div>
+
+                                <div class="trusted-companies__item">
+                                    <img src="/assets/images/trusted-logos/chmz.svg">
+                                </div>
+
+                                <div class="trusted-companies__item">
+                                    <img src="/assets/images/trusted-logos/ural-kaliy.svg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="trusted-companies__slide carousel-item">
+                            <div class="trusted-companies__items">
+                                <div class="trusted-companies__item">
+                                    <img src="/assets/images/trusted-logos/lukoil.svg">
+                                </div>
+
+                                <div class="trusted-companies__item trusted-companies__item--knauf">
+                                    <img src="/assets/images/trusted-logos/knauf.svg">
+                                </div>
+
+                                <div class="trusted-companies__item">
+                                    <img src="/assets/images/trusted-logos/chmz.svg">
+                                </div>
+
+                                <div class="trusted-companies__item">
+                                    <img src="/assets/images/trusted-logos/ural-kaliy.svg">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -380,6 +582,10 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="container-large map-address">
+            <div id="map" style="width: 100%; height: 600px"></div>
         </div>
     </div>
 
@@ -424,5 +630,7 @@
             <img src="/assets/images/mobil/shf.svg">
         </div>
     </div>
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   <script type="text/javascript" src="app.bundle.js"></script></body>
 </html>
