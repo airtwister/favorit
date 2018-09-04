@@ -9,3 +9,11 @@ $('#top-slider').carousel({
 $('.carousel').carousel({
   interval: false
 });
+
+ymaps.ready(() => {
+  // Создание карты.
+  new ymaps.Map("map", {
+    center: [55.76, 37.64],
+    zoom: 17
+  });
+});
