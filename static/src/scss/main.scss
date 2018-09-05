@@ -86,12 +86,13 @@
   }
 
   &__item {
-    width: 48%;
+    width: 45%;
     display: flex;
     margin-bottom: 30px;
-    line-height: 1.3;
 
     img {
+      width: 64px;
+      height: 64px;
       margin-right: 28px;
     }
   }
@@ -105,10 +106,20 @@
 
   @media only screen and (max-width: $tableMaxWidth) {
     width: 100%;
-    padding: 0 30px;
+    padding: 0 25px;
 
     &__items {
       margin-top: 30px;
+    }
+
+    &__item {
+      width: 46%;
+
+      img {
+        width: 54px;
+        height: 54px;
+        margin-right: 24px;
+      }
     }
   }
 }
@@ -156,6 +167,7 @@
     font-size: 20px;
     font-weight: $fontBold;
     text-transform: uppercase;
+    letter-spacing: .1em;
   }
 
   @media only screen and (max-width: $tableMaxWidth) {
@@ -175,6 +187,25 @@
 
   @media only screen and (max-width: $tableMaxWidth) {
     padding: 0 20px;
+
+    .main-title {
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -28px;
+        width: 100%;
+        height: 1px;
+        background: $greyLighter;
+      }
+    }
+
+    &__text {
+      margin-top: 46px;
+      font-size: 16px;
+    }
   }
 }
 
@@ -282,6 +313,11 @@
     font-weight: $fontBold;
     font-size: 14px;
   }
+
+  @media only screen and (max-width: $tableMaxWidth) {
+    margin-top: 40px;
+    display: block;
+  }
 }
 
 .primary-news {
@@ -297,7 +333,6 @@
 
   &__title {
     font-size: 35px;
-    line-height: 50px;
   }
 
   &__text {
@@ -308,6 +343,12 @@
     margin-top: 56px;
     display: flex;
     align-items: center;
+  }
+
+  @media only screen and (max-width: $tableMaxWidth) {
+    &__title {
+      font-size: 26px;
+    }
   }
 }
 
@@ -392,8 +433,13 @@
     margin: 0 10px;
   }
 
+  &__text {
+    display: inline-block;
+    max-width: 250px;
+  }
+
   &__image {
-    height: 270px;
+    height: 245px;
     display: inline-block;
 
     img {

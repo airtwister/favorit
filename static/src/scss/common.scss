@@ -2,12 +2,20 @@ body {
   padding: 26px 10px 100px;
   font-family: $proximaNova;
   font-size: 16px;
-  line-height: 1.7;
+  line-height: 1.5;
   color: $black;
+
+  @media only screen and (max-width: $tableMaxWidth) {
+    font-size: 14px;
+  }
 }
 
 a {
   text-decoration: none;
+}
+
+p {
+  margin: 0;
 }
 
 button {
@@ -71,7 +79,7 @@ button {
   }
 
   &__search {
-    margin: 0 20px;
+    margin: 0 46px;
     position: relative;
     width: 320px;
 
@@ -87,6 +95,10 @@ button {
       height: 36px;
       width: 100%;
       border: 1px solid $greyLighter;
+
+      &::placeholder {
+        color: #C2C5CE;
+      }
     }
 
     @media only screen and (max-width: $tableMaxWidth) {
@@ -138,16 +150,13 @@ button {
     width: 1px;
     height: 44px;
     background: $greyLighter;
-
-    @media only screen and (max-width: $tableMaxWidth) {
-      margin: 0 16px;
-    }
   }
 
   &__distributor {
     line-height: 1.2;
 
     img {
+      width: 78px;
       margin-bottom: -4px;
     }
   }
@@ -165,6 +174,23 @@ button {
       font-size: 13px;
       text-transform: uppercase;
       white-space: nowrap;
+    }
+  }
+
+  @media only screen and (max-width: $tableMaxWidth) {
+    .left-logo img {
+      width: 141px;
+    }
+
+    &__separator {
+      margin: 0 20px;
+    }
+
+    &__distributor {
+      img {
+        width: 62px;
+        margin-bottom: -2px;
+      }
     }
   }
 }
