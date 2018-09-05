@@ -272,3 +272,49 @@ button {
     }
   }
 }
+
+.ask-form {
+  width: 475px;
+  color: $white;
+
+  &__content {
+    padding: 50px;
+    background: $blue;
+  }
+
+  &__title {
+    margin-bottom: 32px;
+    font-size: 19px;
+    font-weight: $fontSemiBold;
+  }
+
+  &__text {
+    margin-bottom: 36px;
+  }
+
+  &__input {
+    margin-bottom: 25px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__footer {
+    text-align: center;
+  }
+
+  button {
+    min-width: 275px;
+    margin-top: 50px;
+    height: 75px;
+    padding: 0 30px;
+    border: none;
+    outline: none;
+    color: $white;
+    background: $blueDarker;
+    font-size: 13px;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+}

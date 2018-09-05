@@ -145,56 +145,10 @@
   }
 
   &__input {
-    position: relative;
     margin-bottom: 25px;
 
     &:last-child {
       margin-bottom: 0;
-    }
-
-    input {
-      width: 100%;
-      height: 50px;
-      line-height: 48px;
-      border: 1px solid transparent;
-      padding: 0 16px;
-
-      &::placeholder {
-        color: #C2C5CE;
-      }
-    }
-
-    &[data-error] {
-      input {
-        border-color: #FF8E8E;
-      }
-
-      &:before {
-        content: '';
-        position: absolute;
-        transform: rotate(45deg);
-        background: #FF8E8E;
-        width: 8px;
-        height: 8px;
-        bottom: -15px;
-        left: 20px;
-      }
-
-      &:after {
-        font-family: $openSans;
-        font-size: 12px;
-        position: absolute;
-        bottom: -50px;
-        left: 0;
-        content: attr(data-error);
-        width: 240px;
-        height: 40px;
-        padding: 12px 20px;
-        background: #FF8E8E;
-        color: $white;
-        border-radius: 2px;
-
-      }
     }
   }
 

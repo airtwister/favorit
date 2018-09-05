@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import 'bootstrap/js/dist/carousel';
+import 'bootstrap/js/dist/modal';
 import './scss/app.scss';
 import ClientForm from './components/ClientForm.vue';
 import Vue from 'vue';
@@ -34,3 +35,4 @@ new Vue({
     ClientForm
   }
 });
+
