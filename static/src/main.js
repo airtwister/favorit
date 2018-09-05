@@ -1,6 +1,8 @@
 import $ from 'jquery';
 import 'bootstrap/js/dist/carousel';
 import './scss/app.scss';
+import ClientForm from './components/ClientForm.vue';
+import Vue from 'vue';
 
 $('#top-slider').carousel({
   interval: 4000
@@ -24,4 +26,11 @@ ymaps.ready(() => {
   });
 
   myMap.geoObjects.add(myPlacemark);
+});
+
+new Vue({
+  el: '.client-form-wrapper',
+  components: {
+    ClientForm
+  }
 });

@@ -36,12 +36,19 @@ module.exports = {
       },
       {
         test: /\.vue$/,
-        loader: 'vue-loader'
-      }
+        use: [
+          'vue-loader',
+        ],
+      },
     ]
   },
   stats: {
     colors: true
+  },
+  resolve: {
+    alias: {
+      vue: 'vue/dist/vue.js'
+    }
   },
   devtool: 'source-map',
   plugins: [
