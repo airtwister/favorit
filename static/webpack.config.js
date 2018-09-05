@@ -13,7 +13,7 @@ module.exports = {
   mode: 'development',
   entry: './src/main.js',
   output: {
-    path: path.resolve(__dirname, '../dist'),
+    path: path.resolve(__dirname, 'dist'),
     filename: 'app.bundle.js'
   },
   module: {
@@ -54,12 +54,20 @@ module.exports = {
       chunkFilename: devMode ? '[id].css' : '[id].[hash].css',
     }),
     new HtmlWebpackPlugin({
-      filename: path.join(__dirname, '../dist', 'main.html'),
+      filename: path.join(__dirname, 'dist', 'main.html'),
       template: path.join(__dirname, './src/templates', 'main.html'),
       inject: true,
     }),
     new CopyWebpackPlugin([
-      { from: './src/assets', to: path.resolve(__dirname, '../dist/assets') }
+      {
+        from: './src/assets',
+        to: path.resolve(__dirname, 'dist/assets')
+      },
+      {
+        from:    'fonts',
+        to:      path.resolve(__dirname, 'dist/assets/fonts'),
+        context: './node_modules/font-awesome',
+      }
     ]),
     new webpack.ProvidePlugin({
       $: jQuery,

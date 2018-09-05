@@ -1,0 +1,22 @@
+.select-element {
+  position: relative;
+
+  select {
+    min-width: 100px;
+    background: #F3F5FB;
+    border: none;
+    border-radius: 0;
+    height: 36px;
+    appearance: none;
+    padding: 0 36px 0 16px;
+  }
+
+  .fa {
+    margin-top: -8px;
+    pointer-events: none;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    z-index: 5;
+  }
+}
