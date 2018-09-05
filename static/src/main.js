@@ -11,9 +11,17 @@ $('.carousel').carousel({
 });
 
 ymaps.ready(() => {
-  // Создание карты.
-  new ymaps.Map("map", {
+  const myMap = new ymaps.Map("map", {
     center: [55.76, 37.64],
-    zoom: 17
+    zoom: 18
   });
+
+  const balloonContent = $('.map-address__balloon-wrapper').detach().show().html();
+
+  const myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+    hintContent: 'Шоссе Космонавтов, 399',
+    balloonContent,
+  });
+
+  myMap.geoObjects.add(myPlacemark);
 });

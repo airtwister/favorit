@@ -172,9 +172,20 @@
 
                             <p class="client-form__direction">Выберите интересующее вас направление:</p>
 
-                            <label><input type="radio" name="type">Легковой транспорт</label><br>
-                            <label><input type="radio" name="type">Грузовой транспорт</label><br>
-                            <label><input type="radio" name="type">Предприятия</label><br>
+                            <div class="radio-element">
+                                <input type="radio" name="type" id="radio-pvl">
+                                <label for="radio-pvl">Легковой транспорт</label>
+                            </div><br>
+
+                            <div class="radio-element">
+                                <input type="radio" name="type" id="radio-cvl">
+                                <label for="radio-cvl">Грузовой транспорт</label>
+                            </div><br>
+
+                            <div class="radio-element">
+                                <input type="radio" name="type" id="radio-ind">
+                                <label for="radio-ind">Предприятия</label>
+                            </div><br>
                         </div>
 
                         <button>ДАЛЕЕ</button>
@@ -592,6 +603,30 @@
 
         <div class="container-large map-address">
             <div id="map" style="width: 100%; height: 600px"></div>
+
+            <div class="map-address__balloon-wrapper">
+                <div class="map-address__balloon">
+                    <p class="map-address__title">Пермь, Шоссе Космонавтов, 399</p>
+
+                    <div class="map-address__schedule">
+                        <div class="map-address__schedule-item">
+                            <p>Режим работы</p>
+                            <p>С 9:00 до 20:00</p>
+                        </div>
+                        <div class="map-address__schedule-item">
+                            <p>Телефоны</p>
+                            <p>
+                                +7 (342) 296-28-84<br>
+                                +7 (342) 296-28-84
+                            </p>
+                        </div>
+                        <div class="map-address__schedule-item">
+                            <p>Эл. почта</p>
+                            <p>opt@favorit59.ru</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 

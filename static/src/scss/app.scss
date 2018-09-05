@@ -1,6 +1,8 @@
 $fa-font-path: '/assets/fonts';
 @import "~font-awesome/scss/font-awesome";
 @import "~bootstrap/scss/bootstrap";
+@import "~reset-css";
+@import "~normalize.css";
 @import "fonts";
 @import "variables";
 @import "elements";
