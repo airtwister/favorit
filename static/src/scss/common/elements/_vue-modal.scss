@@ -1,0 +1,75 @@
+.vue-modal {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 9999;
+  -webkit-overflow-scrolling: touch;
+
+  &__overlay {
+    padding: 10px 0 20px;
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    left: 0;
+    top: 0;
+    @include transition(background-color 300 ease-out);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__close-btn {
+    width: 56px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    color: white;
+    right: -56px;
+    font-size: 24px;
+    opacity: 0.6;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__content {
+    position: relative;
+    box-shadow: 2px 2px 15px 4px rgba($black, .3)
+  }
+}
+
+html.vue-modal-opened {
+  overflow: hidden;
+  margin-right: 17px;
+}
+
+@keyframes animEnter {
+  0% {
+    transform: translate3d(20px, 0, 0) translate3d(100%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes animLeave {
+  0% {
+    max-height: 150px;
+  }
+  100% {
+    max-height: 0;
+  }
+}

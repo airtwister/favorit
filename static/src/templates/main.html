@@ -38,6 +38,12 @@
                 <div class="top-nav__search">
                     <img src="/assets/images/icons/magnifier.svg" width="18">
                     <input title="Поиск" placeholder="Поиск по товарам">
+
+                    <div class="search-results">
+                        <div class="search-results__item">Минеральное масло LIQUI</div>
+                        <div class="search-results__item">МLIQUI MOLY MoS2 Leichtlauf 10W</div>
+                        <div class="search-results__item">Castrol EDGE 5W-30</div>
+                    </div>
                 </div>
 
                 <div class="basket">
@@ -64,7 +70,7 @@
                 </div>
 
                 <div class="top-title__ask">
-                    <button data-toggle="modal" data-target="#ask-form-modal">Задать вопрос</button>
+                    <button id="show-questions-form">Задать вопрос</button>
                 </div>
             </div>
 
@@ -649,32 +655,7 @@
         </div>
     </div>
 
-    <div class="modal" tabindex="-1" role="dialog" id="ask-form-modal">
-        <div class="modal-dialog ask-form" role="document">
-            <div class="modal-content">
-                <div class="modal-body ask-form__content">
-                    <p class="ask-form__title">У вас есть вопросы ?</p>
-                    <p class="ask-form__text">Оставьте заявку и наш специалист в течении 24 часов свяжется с Вами, чтобы дать вам ответы на ваши вопросы.</p>
-
-                    <div class="ask-form__inputs">
-                        <div class="ask-form__input element-input">
-                            <input placeholder="ФИО">
-                        </div>
-                        <div class="ask-form__input element-input">
-                            <input placeholder="Телефон для связи">
-                        </div>
-                        <div class="ask-form__input element-textarea" data-error="Пустое поле!">
-                            <textarea placeholder="Напишите ваш вопрос здесь"></textarea>
-                        </div>
-                    </div>
-
-                    <div class="ask-form__footer">
-                        <button>Задать вопрос</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div id="question-form-modal"></div>
 
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   </body>

@@ -2,8 +2,12 @@ import $ from 'jquery';
 import 'bootstrap/js/dist/carousel';
 import 'bootstrap/js/dist/modal';
 import './scss/app.scss';
-import ClientForm from './components/ClientForm.vue';
+import ClientForm from './components/modules/ClientForm.vue';
+import QuestionFormModal from './components/modules/QuestionFormModal.vue';
 import Vue from 'vue';
+import vmodal from './components/common/vue-modal/plugin';
+
+Vue.use(vmodal);
 
 $('#top-slider').carousel({
   interval: 4000
@@ -36,3 +40,21 @@ new Vue({
   }
 });
 
+$('.top-nav__search input')
+  .on('focus', () => {
+    $('.top-nav__search').find('.search-results').fadeIn(200);
+  })
+  .on('blur', () => {
+    $('.top-nav__search').find('.search-results').fadeOut(200);
+  });
+
+$('#show-questions-form').on('click', () => {
+  $('#question-form-modal').html('<modal></modal>');
+
+  new Vue({
+    el:         '#question-form-modal',
+    components: {
+      Modal: QuestionFormModal,
+    },
+  });
+});

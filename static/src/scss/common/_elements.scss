@@ -1,3 +1,5 @@
+@import 'elements/vue-modal';
+
 .select-element {
   position: relative;
 
@@ -99,6 +101,7 @@
     }
 
     &:before {
+      z-index: 1;
       content: '';
       position: absolute;
       transform: rotate(45deg);
@@ -110,6 +113,7 @@
     }
 
     &:after {
+      z-index: 1;
       font-family: $openSans;
       font-size: 12px;
       position: absolute;
@@ -133,3 +137,4 @@
     height: 220px;
   }
 }
+
