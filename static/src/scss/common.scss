@@ -7,6 +7,20 @@ body {
 
   @media only screen and (max-width: $tableMaxWidth) {
     font-size: 14px;
+    padding-right: 0;
+    padding-left: 0;
+
+    .header {
+      padding: 0 30px;
+    }
+
+    .media-desktop {
+      display: none;
+    }
+
+    .media-tablet {
+      display: block;
+    }
   }
 }
 
@@ -217,6 +231,8 @@ button {
 }
 
 .footer {
+  margin-top: 60px;
+
   &__separator {
     margin: 56px 0;
     height: 1px;
@@ -225,11 +241,17 @@ button {
 
   &__terms {
     display: flex;
-    justify-content: space-between;
   }
 
-  .user-agreement {
-    max-width: 340px;
+  .company-rights {
+    margin-left: 130px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    &__agreement {
+      max-width: 340px;
+    }
   }
 
   &__sponsors {
@@ -238,6 +260,30 @@ button {
 
     img {
       height: 40px;
+    }
+  }
+
+  @media only screen and (max-width: $tableMaxWidth) {
+    padding: 0 30px;
+    margin-top: 40px;
+
+
+    &__separator {
+      margin: 28px 0;
+    }
+
+    .company-rights {
+      display: block;
+
+      &__agreement {
+        margin-top: 25px;
+      }
+    }
+
+    &__sponsors {
+      img {
+        height: 30px;
+      }
     }
   }
 }
