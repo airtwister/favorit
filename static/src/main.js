@@ -1,20 +1,65 @@
-import $ from 'jquery';
-import 'bootstrap/js/dist/carousel';
-import 'bootstrap/js/dist/modal';
 import './scss/app.scss';
 import ClientForm from './components/modules/ClientForm.vue';
 import QuestionFormModal from './components/modules/QuestionFormModal.vue';
-import Vue from 'vue';
-import vmodal from './components/common/vue-modal/plugin';
+import 'owl.carousel';
 
-Vue.use(vmodal);
-
-$('#top-slider').carousel({
-  interval: 4000
+$('#top-slider').owlCarousel({
+  loop:       true,
+  autoplay:   true,
+  nav:        false,
+  slideBy:    'page',
+  items:      1,
 });
 
-$('.carousel').carousel({
-  interval: false
+$('.success-cases .owl-carousel').owlCarousel({
+  loop:       false,
+  nav:        false,
+  slideBy:    'page',
+  items:      4,
+  dotsClass:  'owl-dots owl-dots--white',
+  responsive: {
+    0: {
+      items: 1,
+      margin: 32,
+    },
+    600: {
+      items:  2,
+      margin: 32,
+    },
+    800: {
+      items:  3,
+      margin: 25,
+    },
+    1400: {
+      items:  4,
+      margin: 25,
+    },
+  }
+});
+
+$('.owl-carousel').owlCarousel({
+  loop:       false,
+  nav:        false,
+  slideBy:    'page',
+  items:      4,
+  responsive: {
+    0: {
+      items: 1,
+      margin: 32,
+    },
+    500: {
+      items: 2,
+      margin: 32,
+    },
+    700: {
+      items:  3,
+      margin: 25,
+    },
+    1000: {
+      items:  4,
+      margin: 25,
+    },
+  }
 });
 
 ymaps.ready(() => {
@@ -31,6 +76,12 @@ ymaps.ready(() => {
   });
 
   myMap.geoObjects.add(myPlacemark);
+
+  $(window).on('resize', () => {
+    myMap.container.fitToViewport();
+  });
+
+  myMap.behaviors.disable('scrollZoom');
 });
 
 new Vue({
@@ -58,3 +109,5 @@ $('#show-questions-form').on('click', () => {
     },
   });
 });
+
+

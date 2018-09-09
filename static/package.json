@@ -14,8 +14,10 @@
     "cssnano": "^4.1.0",
     "eslint": "^5.5.0",
     "expose-loader": "^0.7.5",
+    "file-loader": "^2.0.0",
     "font-awesome": "^4.7.0",
     "html-webpack-plugin": "^3.2.0",
+    "image-webpack-loader": "^4.3.1",
     "mini-css-extract-plugin": "^0.4.2",
     "node-sass": "^4.9.3",
     "path": "^0.12.7",
@@ -61,6 +63,7 @@
     "exports-loader": "^0.7.0",
     "jquery": "^3.3.1",
     "normalize.css": "^8.0.0",
+    "owl.carousel": "^2.3.4",
     "popper.js": "^1.14.4",
     "reset-css": "^4.0.1",
     "vue": "^2.5.17"

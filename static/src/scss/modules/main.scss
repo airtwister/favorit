@@ -14,6 +14,10 @@
   &__item {
     overflow: hidden;
     color: $white;
+
+    img {
+      width: auto!important;
+    }
   }
 
   &__content {
@@ -33,7 +37,7 @@
     font-size: 18px;
   }
 
-  .carousel-indicators {
+  .owl-dots{
     position: absolute;
     z-index: 1;
     bottom: 40px;
@@ -58,7 +62,7 @@
       font-size: 15px;
     }
 
-    .carousel-indicators {
+    .owl-dots {
       margin-left: 24px;
     }
   }
@@ -454,17 +458,6 @@
   }
 
   &__item {
-    width: 25%;
-    margin: 0 10px;
-
-    &:first-child {
-      margin-left: 0;
-    }
-
-    &:last-child {
-      margin-right: 0;
-    }
-
     img {
       width: 100%;
       margin-bottom: 30px;
@@ -491,8 +484,6 @@
 
   &__item {
     text-align: center;
-    width: 25%;
-    margin: 0 10px;
   }
 
   &__text {
@@ -529,9 +520,9 @@
   }
 
   &__item {
+    height: 150px;
     background: $white;
     text-align: center;
-    width: 25%;
     margin: 0 10px;
     display: flex;
     justify-content: center;
@@ -552,6 +543,12 @@
 
     &--knauf img {
       max-height: 50%;
+    }
+  }
+
+  @media only screen and (max-width: 1000) {
+    &__item {
+      height: 128px;
     }
   }
 }
@@ -621,6 +618,11 @@
     display: none;
   }
 
+  &__map {
+    width: 100%;
+    height: 600px;
+  }
+
   &__balloon {
     padding: 10px 30px 30px;
     width: 400px;
@@ -646,12 +648,18 @@
       }
     }
   }
+
+  @media only screen and (max-width: $tableMaxWidth) {
+    &__map {
+      height: 320px;
+    }
+  }
 }
 
 .success-cases, .rewards, .trusted-companies {
-  .carousel-indicators {
+  .owl-dots {
     position: absolute;
-    top: -72px;
+    top: -63px;
     right: 0;
     justify-content: flex-end;
     margin-right: 0;

@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   padding: 26px 10px 100px;
   font-family: $proximaNova;
@@ -45,12 +49,14 @@ button {
   position: relative;
   margin: 0 auto;
   padding: 0;
+  overflow-x: hidden;
 }
 
 .container-large {
   position: relative;
   margin: 0 auto;
   max-width: 1530px;
+  overflow-x: hidden;
 }
 
 .top-nav {
@@ -307,12 +313,11 @@ button {
   }
 }
 
-// bootstrap
-.carousel-indicators {
+.owl-carousel .owl-dots {
   display: flex;
   justify-content: flex-start;
 
-  li {
+  button.owl-dot {
     background: transparent;
     margin: 0 8px;
     height: 14px;
@@ -328,7 +333,7 @@ button {
   }
 
   &--white {
-    li {
+    button.owl-dot {
       border-color: $white;
 
       &.active {

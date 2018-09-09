@@ -5,7 +5,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
-const jQuery = require("jquery");
 
 const devMode = process.env.NODE_ENV !== 'production';
 
@@ -49,6 +48,19 @@ module.exports = {
           loader:  'expose-loader',
           options: '$',
         }],
+      },
+      {
+        test: /\.(gif|png|jpe?g|svg)$/i,
+        use: [
+          'file-loader',
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              bypassOnDebug: true,
+              disable: true,
+            },
+          },
+        ],
       }
     ]
   },
@@ -57,7 +69,7 @@ module.exports = {
   },
   resolve: {
     alias: {
-      vue: 'vue/dist/vue.js'
+      './owl.video.play.png': 'owl.carousel/src/img/owl.video.play.png',
     }
   },
   devtool: 'source-map',
@@ -87,9 +99,10 @@ module.exports = {
       }
     ]),
     new webpack.ProvidePlugin({
-      $: jQuery,
-      jQuery: jQuery,
-      "window.jQuery": jQuery
+      $: 'jquery',
+      jQuery: 'jquery',
+      "window.jQuery": 'jquery',
+      Vue: ['vue/dist/vue.esm.js', 'default']
     }),
     new webpack.HotModuleReplacementPlugin()
   ],
